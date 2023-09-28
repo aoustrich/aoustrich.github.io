@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 # subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
-subtitle: Thinker of Thoughts. Writer of Words.
+subtitle: ""
 
 profile:
   align: right
@@ -24,7 +24,7 @@ I'm a Senior studying [Statistics: Data Science](https://catalog2022.byu.edu/phy
 #### Why am I studying Statistics and Data Science?
 <blockquote>
 If you torture the data long enough, it will confess to anything. 
-     - [Ronald Coase](https://en.wiktionary.org/wiki/if_you_torture_the_data_long_enough,_it_will_confess_to_anything)
+     - <a target="-blank" href="https://en.wiktionary.org/wiki/if_you_torture_the_data_long_enough,_it_will_confess_to_anything">Ronald Coase</a>
 </blockquote>
 
 I've seen how misleading numbers can be and how easily model predictions can become inaccurate when assumptions are violated. I want to know how data is tortured so I can prevent it from happening in my analyses.
