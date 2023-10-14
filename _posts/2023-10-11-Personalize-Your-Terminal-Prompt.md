@@ -13,20 +13,32 @@ Enter the world of data science, and you'll soon realize that your computer's Te
 
 Over the last year I've learned a lot and made just a couple quick edits that have completely changed both my efficiency with and enjoyment from using the CLI. I've perused parts of the <a href="https://www.gnu.org/software/bash/manual/bash.html">Bash Reference Manual</a> and scoured a lot of Stack Overflow discussions to find solutions to my problems. 
 
-For anyone learning Data Science/Analytics, I hope this helps!
+If you want your terminal to be less boring and confusing, this is the post for you! I'll be walking you through ways to change the color and the content of your terminal prompt (and maybe give an extra tip or two).
 
+<div class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/defaultBash.jpg" class="img-fluid rounded z-depth-1" zoomable=true title="From bad..." %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.html path="assets/img/addBranch.jpg" class="img-fluid rounded 
+        z-depth-1" zoomable=true title="...to Good"%}
+    </div>
+</div>
+
+-------
 
 ## Disclaimer: Bash v. Zsh 
 
 If you're using your Mac's Terminal, you've probably noticed the default shell is Zsh. As with anything related to computers and code, the Bash v. Zsh debate can be pretty intense at times even though <a href="https://www.geeksforgeeks.org/bash-scripting-difference-between-zsh-and-bash/">they're very similar shells</a>.  When I was first learning the CLI in my <a href="https://catalog.byu.edu/courses/14178-000">Data Science Ecosystems</a> class at BYU, my instructor used Bash so I followed his example. I honestly haven't looked too far into the differences between the two shells, but I haven't run into any issues with making Bash my default shell. 
 
-All examples given below assume that Bash is the default and suggest all readers follow along.
+All examples given below assume that Bash is the default and I suggest all readers follow along.
 
 To switch the default shell to Bash, run the following command and then enter your password as prompted.
 ```
 chsh -s /bin/bash
 ``` 
 
+-------
 ## Part 1: Customizing Your Bash Prompt
 
 I prefer using a dark theme for my terminal so I've edited my basic profile by clicking "Terminal" in the top left corner of the screen near the Apple logo. The following path through the settings may be helpful: Terminal > Settings > Profiles > Text (tab). Under the "Text" tab, I changed the background color to be Black, the Text and Bold Text to be white, and changed the cursor to be an underline that blinks (see red arrows below).
@@ -146,6 +158,7 @@ After saving and "Refreshing" our `.bash_profile`, our terminal prompt should no
     </div>
 </div>
 
+-------
 ## Part 2: Making the `ls` Command Easier to Read
 
 By default, running `ls` shows the items in a current directory, but it doesn’t tell us much about what each item is. If I’m working in a directory I haven’t used in a while or if I’ve cloned someone else’s repository from GitHub, it can be pretty difficult to know what’s going on in the directory and I might accidentally try to "cd" into a text file that doesn’t have the ‘.txt' extension.
@@ -182,6 +195,7 @@ After saving and "Refreshing" our `.bash_profile`, our terminal should now show 
     </div>
 </div>
 
+-------
 ## Part 3: Extra Tips
 
 - It’s annoying to see the “Last login: “ message when opening up a new session of the Terminal. You can get rid of this by running `touch .hushlogin` at the root level.
@@ -196,6 +210,7 @@ If both these steps are completed, it should look like this when you open a new 
     </div>
 </div>
 
+------
 ## Final Thoughts
 
 One of the most empowering things about the journey to learn Data Science/Analytics is how many things you learn along the way that allow you to customize your workflow. 

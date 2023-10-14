@@ -1,12 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - aoustrich
+
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - aoustrich/stochify
+  - aoustrich/KaggleBikeShare
+  - aoustrich/AmazonEmployeeAccess
