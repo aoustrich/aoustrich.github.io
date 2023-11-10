@@ -5,6 +5,7 @@ date: 2023-10-11 21:30:00
 description: Make your CLI experience more enjoyable with these tips and tricks.
 tags: links code
 categories: How-To
+giscus_comments: true
 thumbnail: assets/img/terminal.jpg
 ---
 <!-- <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> -->
@@ -75,12 +76,12 @@ Whether or not your `.bash_profile` is empty, create a new section called "Custo
 # Custom Terminal Prompt
 
 export CLICOLOR=1
-PS1="\[\e[1;91m\]\u\[e[m\]:" 
+PS1="\[\e[1;91m\]\u\[\e[m\]:" 
 PS1+=">> "
 export PS1;
 ```
 
-The `export CLICOLOR=1` line tells the terminal to use different colors than what has been set up in the Prodile. `PS1` is string we'll be building to become our new prompt. Setting `PS1="\[\e[1;91m\]\u\[e[m\]:"` involves finding the username with the "\u" and the rest of the code controls the way the username is formatted. In this example, we display the username in bold red text (See the LSCOLORS section of  <a href="https://gist.github.com/thomd/7667642">thomd's repo</a> for more information on how the colors work). We set `PS1+=">> "` to add on two greater than symbols after the username so we can more easily see the end of our prompt. The last line `export PS1;` tells the terminal to use the new prompt. 
+The `export CLICOLOR=1` line tells the terminal to use different colors than what has been set up in the Prodile. `PS1` is string we'll be building to become our new prompt. Setting `PS1="\[\e[1;91m\]\u\[\e[m\]:"` involves finding the username with the "\u" and the rest of the code controls the way the username is formatted. In this example, we display the username in bold red text (See the LSCOLORS section of  <a href="https://gist.github.com/thomd/7667642">thomd's repo</a> for more information on how the colors work). We set `PS1+=">> "` to add on two greater than symbols after the username so we can more easily see the end of our prompt. The last line `export PS1;` tells the terminal to use the new prompt. 
 
 
 #### Save the `.bash_profile` and "Refresh" Your Terminal
@@ -110,14 +111,14 @@ Add new lines to the "Custom Terminal Prompt" section of your `.bash_profile` so
 # Custom Terminal Prompt
 
 export CLICOLOR=1
-PS1="\[\e[1;91m\]\u\[e[m\]:" 
+PS1="\[\e[1;91m\]\u\[\e[m\]:" 
 PS1+=" "
-PS1+=”\[\e[1;96m\]\W\[e[m\] ”
+PS1+=”\[\e[1;96m\]\W\[\e[m\] ”
 PS1+=">> "
 export PS1;
 ```
 
-Similar to the line that formats the "\u" username, this new line `PS1+=”\[\e[1;96m\]\W\[e[m\] "` prints our current directory in bold turquoise text.
+Similar to the line that formats the "\u" username, this new line `PS1+=”\[\e[1;96m\]\W\[\e[m\] "` prints our current directory in bold turquoise text.
 
 Save the changes to the `.bash_profile` and "Refresh" your terminal to see your current directory in the prompt. It's easiest to see this updated propmpt if you change directories like this:
 
@@ -141,11 +142,11 @@ export CLICOLOR=1
 # Function to get Git branch
 git_branch() {git branch 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/’ }
 
-PS1="\[\e[1;91m\]\u\[e[m\]:" 
+PS1="\[\e[1;91m\]\u\[\e[m\]:" 
 PS1+=" "
-PS1+=”\[\e[1;96m\]\W\[e[m\] ”
+PS1+=”\[\e[1;96m\]\W\[\e[m\] ”
 PS1+=" "
-PS1+=”\[\e[0;92m\]\$(git_branch)\[e[m\]”
+PS1+=”\[\e[0;92m\]\$(git_branch)\[\e[m\]”
 PS1+=">> "
 export PS1;
 ```
@@ -175,11 +176,11 @@ export CLICOLOR=1
 # Function to get Git branch
 git_branch() {git branch 2>/dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/’ }
 
-PS1="\[\e[1;91m\]\u\[e[m\]:" 
+PS1="\[\e[1;91m\]\u\[\e[m\]:" 
 PS1+=" "
-PS1+=”\[\e[1;96m\]\W\[e[m\] ”
+PS1+=”\[\e[1;96m\]\W\[\e[m\] ”
 PS1+=" "
-PS1+=”\[\e[0;92m\]\$(git_branch)\[e[m\]”
+PS1+=”\[\e[0;92m\]\$(git_branch)\[\e[m\]”
 PS1+=">> "
 export PS1;
 
