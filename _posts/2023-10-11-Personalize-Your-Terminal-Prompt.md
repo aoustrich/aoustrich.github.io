@@ -6,6 +6,7 @@ description: Make your CLI experience more enjoyable with these tips and tricks.
 tags: links code
 categories: How-To
 giscus_comments: true
+related_posts: true
 thumbnail: assets/img/terminal.jpg
 ---
 <!-- <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> -->
