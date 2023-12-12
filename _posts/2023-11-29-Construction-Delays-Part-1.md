@@ -42,7 +42,7 @@ The raw dataset is very large (almost 500k rows) so to avoid API limits I create
 #### Getting and Cleaning the Data
 After reading the documentation, the API call was rather straightforward. Since this dataset uses the latest version of the API I was able to add the parameter `?$limit=497727` at the end of the url to get all the rows at once and avoid working with pagination. 
 
-I created a pandas dataframe of the dataset in JSON format and then removed duplicate rows to decrease the size of the final dataset I used for my analysis called `nycMilestones.csv`. This final dataset has all 12 columns but only **xxxx** rows instead of 497,727. 
+I created a pandas dataframe of the dataset in JSON format and then removed duplicate rows to decrease the size of the final dataset I used for my analysis called `nycMilestones.csv`. This final dataset has all 12 columns but only 59,554 rows instead of 497,727. 
 
 Cleaning the data was relatively easy to do. The most important values are the original and actual start and end dates for the tasks of the projects so I converted them to pandas datetimes and then found the `time delta` values for each task.
 
