@@ -8,7 +8,7 @@ categories: Project
 giscus_comments: true
 related_posts: true
 datatable: true
-thumbnail: assets/img/bigApple.png
+thumbnail: assets/img/nyc_construction/bigApple.png
 ---
 <div class="row justify-content-md-center">
     <div class="col-lg-8 mt-3 mt-md-0">
