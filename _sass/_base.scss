@@ -4,23 +4,48 @@
 
 // Typography
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-em,
-div,
-li,
-span,
-strong {
+body {
+  // font-family: 'Courier New', Courier, monospace;
+  font-family: 'Noto Serif', serif;
+  font-weight: 300;
   color: var(--global-text-color);
 }
 
+// Make h1 header Noto Sans ExtraBold 800
+h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 800;
+  color: var(--global-text-color);
+}
+
+// Make all other headers (h2-h6) Noto Sans SemiBold 600 talic
+h2, h3, h4, h5, h6 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 600;
+  color: var(--global-text-color);
+  // font-style: italic;
+}
+
+
+// p,
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// em,
+// div,
+// li,
+// span,
+// strong {
+//   color: var(--global-text-color);
+//   font-family: 'Noto Sans', sans-serif;
+//   font-family: 'Noto Serif', serif;
+// }
+
 hr {
-  border-top: 1px solid var(--global-divider-color);
+  border-top: 2px solid var(--global-divider-color);
 }
 
 table {
@@ -208,6 +233,9 @@ blockquote {
 
   .navbar-brand {
     color: var(--global-text-color);
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    // color: var(--global-text-color);
   }
 
   .navbar-nav .nav-item .nav-link {
